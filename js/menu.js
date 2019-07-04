@@ -3,11 +3,13 @@ const tablet = window.matchMedia("screen and (max-width:600px)"); //De esta mane
 
 const arrowButtom = document.getElementById("arrow");
 const menu = document.getElementById("left");
+const topMenu = document.getElementById("top");
+const cross = document.getElementById("cross");
 
 tablet.addListener(validation);
 
 isMobile(tablet.matches);
-console.log("todo bien");
+
 function validation(e)
 {
     isMobile(e.matches);
@@ -19,11 +21,15 @@ function isMobile(question)
     if (question)
     {
         arrowButtom.addEventListener("click", active);
+        cross.addEventListener("click", active);
     }
     else
     {
         arrowButtom.removeEventListener("click", active);
+        cross.removeEventListener("click", active);
         menu.classList.remove("isactive");
+        topMenu.classList.remove("isactive");
+        cross.classList.remove("isactive");
     }
 }
 
@@ -34,14 +40,14 @@ function active()
     if (attribute)
     {
         menu.classList.remove("isactive");
-        arrowButtom.classList.remove("icon-circle-down");
-        arrowButtom.classList.add("icon-circle-up");
+        topMenu.classList.remove("isactive");
+        cross.classList.remove("isactive");
     }
     else
     {
         menu.classList.add("isactive");
-        arrowButtom.classList.remove("icon-circle-up");
-        arrowButtom.classList.add("icon-circle-down");
+        topMenu.classList.add("isactive");
+        cross.classList.add("isactive");
     }
     
 }
