@@ -48,22 +48,29 @@ body
     margin: 0;
 }
 
+a
+{
+    color: #485464;
+    text-decoration: none;
+}
+
 .PlatziVideo-wrapper
 {
-    margin:0;
+    background-color: #0e0e0e;
+    color: #485464;
     display: grid;
-    grid-template-columns: 1024px;
-    background: blue;
-    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    grid-template-columns: 1024px;
+    justify-content: center;
+    margin:0;
 }
 
 .left
 {
-    background-color: #151A30;
     color: white;
-    padding: 20px 10px;
+    background-color: #151A30;
+    padding: 20px 20px;
 
 }
 
@@ -73,14 +80,260 @@ body
     margin: 0;
 }
 
+.title span
+{
+    background: -webkit-linear-gradient(90deg, #ef3f27 10%, #ef5697 90%);
+    /* background: -moz-linear-gradient(90deg, yellow 10%, orange 90%);
+    background: -ms-linear-gradient(90deg, yellow 10%, orange 90%);
+    background: -o-linear-gradient(90deg, yellow 10%, orange 90%); */
+    background: linear-gradient(90deg, #ef3f27 10%, #ef5697 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.left-subtitle
+{
+    display: inline-block;
+    font-size: 0.8em;
+    margin-top: 1.5em;
+}
+
 .left a
 {
     color: white;
     text-decoration: none;
 }
 
+ol
+{
+    margin: 0;
+    padding: 0;
+}
+
 .left li
 {
-    margin: 10px 0;
+    font-size: 0.65em;
+    list-style: none;
+    margin: 20px 0;
+    /* display: block; */
+}
+
+.friends-playlist li
+{
+    align-items: center;
+    display: flex;
+    font-size: 0.75em;
+}
+
+.avatar
+{
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    margin-right: 20px;
+    overflow: hidden;
+    width: 30px;
+}
+
+.avatar img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.flexi-video
+{
+    background: blue;
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.video
+{
+    height: 100%;
+    position: absolute;
+        top: 0;
+        left: 0;
+    width: 100%;
+}
+
+.video-panel
+{
+    padding: 20px 10px 10px 10px;
+    background: white;
+    border-bottom: 1.5px solid rgba(0,0,0,0.35);
+}
+
+.video-title
+{
+    font-size: 0.9em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.video-panel p
+{
+    color: #a2a2a2;
+    font-size: 0.8em;
+    margin: 0;
+    margin-bottom: 15;
+}
+
+.buttons
+{
+    align-items: center;
+    display: flex;
+}
+
+.left-buttons
+{
+    align-items: center;
+    display: flex;
+    margin-right: 70px;
+}
+
+.add-to-list
+{
+    color: white;
+    background: -webkit-linear-gradient(90deg, #ef3f27 10%, #ef5697 90%);
+    /* background: -moz-linear-gradient(90deg, yellow 10%, orange 90%);
+    background: -ms-linear-gradient(90deg, yellow 10%, orange 90%);
+    background: -o-linear-gradient(90deg, yellow 10%, orange 90%); */
+    background: linear-gradient(90deg, #ef3f27 10%, #ef5697 90%);
+    border-radius: 10px;
+    font-size: 0.68em;
+    margin-right: 20px;
+    padding: 8px 10px;
+}
+
+.share, .save
+{
     display: block;
+    font-size: 0.7em;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.share span, .save span
+{
+    display: block;
+
+}
+
+.tags a
+{
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    font-size: 0.58em;
+    padding: 3px 0;
+    text-align: center;
+    width: 70px;
+}
+
+.purple-btn
+{
+    background-color: #9768e9;
+}
+
+.aqua-btn
+{
+    background-color: #67ebc0;
+}
+
+.red-btn
+{
+    background-color: #e13b24;
+}
+
+.pink-btn
+{
+    background-color: #ee5084;
+}
+
+.comments-box
+{
+    background-color: white;
+    padding: 20px;
+}
+
+.comments-title
+{
+    font-size: 0.7em;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.form input
+{
+    background-color: #f2f2f1;
+    background-image: url("https://miclaseinformaticacem.files.wordpress.com/2016/11/hugo-lorenzo-5c2ba-c.png");
+    background-position-x: 3px;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+    background-size: 23px;
+    border: none;
+    border-bottom: 2px solid #e7e7e7;
+    border-left: 2px solid #e7e7e7;
+    border-radius: 5px;
+    font-size: 0.8em;
+    padding: 8px 10px 5px 35px;
+    width: 100%;
+}
+
+.comment
+{
+    align-items: center;
+    display: flex;
+    margin: 15px 0;
+}
+
+.comments-text
+{
+    font-size: 0.78em;
+    margin: 0;
+}
+
+.comment a
+{
+    font-size: 0.78em;
+}
+
+.suggestions-box
+{
+    background-color: white;
+    padding: 20px;
+}
+
+.suggestions-title
+{
+    font-size: 0.7em;
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.suggestion figure
+{
+    height: 135px;
+    width: 200px;
+    margin: 0;
+}
+
+.suggestion img
+{
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    width: 100%;
+    -webkit-box-shadow: -6px 8px 20px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -6px 8px 20px -10px rgba(0,0,0,0.75);
+    box-shadow: -6px 8px 20px -10px rgba(0,0,0,0.75);
+}
+
+.suggestion-description
+{
+    font-size: 0.6em;
+    margin: 20px 0;
 }
