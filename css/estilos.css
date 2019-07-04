@@ -1,0 +1,86 @@
+/*Íconos*/
+
+@font-face 
+{
+font-family: 'icomoon';
+src:  url('../fonts/icomoon.eot?pftoml');
+src:  url('../fonts/icomoon.eot?pftoml#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?pftoml') format('truetype'),
+    url('../fonts/icomoon.woff?pftoml') format('woff'),
+    url('../fonts/icomoon.svg?pftoml#icomoon') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] 
+{
+/* use !important to prevent issues with browser extensions that change fonts */
+font-family: 'icomoon' !important;
+speak: none;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+
+/* Better Font Rendering =========== */
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-redo2:before 
+{
+content: "\e968";
+}
+
+.icon-cloud-download:before 
+{
+content: "\e9c2";
+}
+
+/*fuentes traídas de internet
+font-family: 'Nunito', sans-serif;
+font-family: 'Varela Round', sans-serif;
+*/
+
+body
+{
+    margin: 0;
+}
+
+.PlatziVideo-wrapper
+{
+    margin:0;
+    display: grid;
+    grid-template-columns: 1024px;
+    background: blue;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.left
+{
+    background-color: #151A30;
+    color: white;
+    padding: 20px 10px;
+
+}
+
+.title
+{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+.left a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.left li
+{
+    margin: 10px 0;
+    display: block;
+}
