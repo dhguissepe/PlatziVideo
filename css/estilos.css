@@ -88,15 +88,7 @@ a
 
 .mobile-bar
 {
-    background-color: #151A30;
-    color: white;
     display: none;
-    padding: 5px;
-    position: fixed;
-        bottom: 0;
-        right: 0;
-        left: 0;
-    z-index: 3;
 }
 
 .bar-title
@@ -105,7 +97,7 @@ a
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
-    height: 7vh;
+    height: 8vh;
 }
 .left
 {
@@ -529,9 +521,9 @@ ol
         padding-top: 5px;
         padding-bottom: 5px;
         position: fixed;
-            /* top: -10px; */
+            top: 100vh;
             right: 0;
-            bottom: -100vh;
+            bottom: 0;
             left: 0;
         transition: 0.3s;
         width: 100vw;
@@ -540,20 +532,28 @@ ol
 
     .left.isactive
     {
-        bottom: 0;
+        top: 0vh;
     }
 
     .mobile-bar
     {
+        background-color: #151A30;
         box-sizing: border-box;
+        color: white;
         display: initial;
         height: auto;
+        padding: 5px;
+        position: fixed;
+            top: 91.2vh;
+            right: 0;
+            left: 0;
+        transition: 0.3s;
+        z-index: 3;
     }
 
     .mobile-bar.isactive
     {
-        bottom: 100vh;
-        transition: 0.3s;
+        top: -8.8vh;
     }
 
     .title-container
@@ -567,16 +567,20 @@ ol
         font-size: 1.3em;
 
     }
+
+    .close
+    {
+        transition: 0.3s;
+    }
     
     .close.isactive
     {
         top: 0;
-        transition: 0.3s;
     }
 
     .suggestions-box
     {
-        padding-bottom: 8vh;
+        padding-bottom: 9vh;
     }
 }
 
