@@ -487,9 +487,8 @@ ol
         padding-top: 5px;
         padding-bottom: 5px;
         position: fixed;
-            top: 85vh;
             right: 0;
-            bottom: 0;
+            bottom: -85vh;
             left: 0;
         transition: 0.3s;
         width: 100vw;
@@ -498,7 +497,7 @@ ol
 
     .left.isactive
     {
-        top: 0;
+        bottom: 0;
     }
 
     .arrow
