@@ -455,7 +455,7 @@ ol
     {
         justify-content: space-between;
         margin-right: 0px;
-        padding-left: 20px;
+        padding-left: 35px;
         padding-right: 20px;
         width: 100%;
     }
@@ -477,7 +477,7 @@ ol
     .red-btn,
     .pink-btn
     {
-        margin-right: 20px;
+        margin-right: 5px;
         flex-shrink: 0;
     }
 
@@ -596,6 +596,12 @@ ol
         flex-wrap: wrap;
     }
 
+    .left-buttons
+    {
+        padding-left: 30px;
+    }
+}
+
 @media screen and (max-width: 397px)
 {
     .left-buttons
@@ -617,8 +623,12 @@ ol
     {
         margin-top: 10px;
     }
+    .left-buttons
+    {
+        padding-left: 15px;
+    }
 }
-}
+
 
 @media screen and (max-width: 320px)
 {
