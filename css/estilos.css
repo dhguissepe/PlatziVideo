@@ -79,11 +79,13 @@ a
 
 .grid-container
 {
+    background-color: white;
     display:grid;
     grid-template-columns: 250px 1fr 1fr;
     grid-template-areas: "left video video"
                          "left panel panel"
-                         "left comments suggestions";
+                         "left comments suggestions"
+                         "footer footer footer";
 }
 
 .mobile-bar
@@ -99,6 +101,7 @@ a
     justify-content: space-between;
     padding: 0 10px;
 }
+
 .left
 {
     background-color: #151A30;
@@ -226,10 +229,11 @@ ol
 
 .video-panel
 {
-    background: white;
-    border-bottom: 1.5px solid rgba(0,0,0,0.35);
     grid-area: panel;
     padding: 20px 10px 0 10px;
+    -webkit-box-shadow: 0px 5px 3px -4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 5px 3px -4px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 3px -4px rgba(0,0,0,0.2);
 }
 
 .video-title
@@ -334,7 +338,6 @@ ol
 
 .comments-box
 {
-    background-color: white;
     grid-area: comments;
     padding: 20px;
     position: relative;
@@ -389,7 +392,6 @@ ol
 
 .suggestions-box
 {
-    background-color: white;
     grid-area: suggestions;
     padding: 20px;
 }
@@ -426,6 +428,28 @@ ol
     margin: 20px 0;
 }
 
+.footer
+{
+    align-items: center;
+    background-color: rgb(28, 33, 56);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    grid-area: footer;
+    padding: 20px;
+}
+
+.footer p
+{
+    margin: 0;
+}
+
+.footer a
+{
+    color: white;
+    text-decoration-line: underline;
+}
+
 @media screen and (max-width: 882px)
 {
     .grid-container
@@ -435,7 +459,8 @@ ol
         grid-template-areas: "left video video"
                             "left panel panel"
                             "left comments comments"
-                            "left suggestions suggestions";
+                            "left suggestions suggestions"
+                            "footer footer footer";
     }
     
     .buttons
@@ -485,6 +510,7 @@ ol
                             "panel panel panel"
                             "left comments comments"
                             "left suggestions suggestions"
+                            "footer footer footer"
                             ;
     }
     
@@ -502,6 +528,7 @@ ol
                             "panel panel panel"
                             "comments comments comments"
                             "suggestions suggestions suggestions"
+                            "footer footer footer"
                             ;
     }
 
@@ -512,6 +539,7 @@ ol
         overflow: auto;
         padding-top: 5px;
         padding-bottom: 5px;
+        padding-right: 20vw;
         position: fixed;
             top: 100vh;
             right: 0;
@@ -570,9 +598,9 @@ ol
         top: 0;
     }
 
-    .suggestions-box
+    .footer
     {
-        padding-bottom: 9vh;
+        padding-bottom: 10vh;
     }
 }
 
@@ -594,7 +622,7 @@ ol
     }
 }
 
-@media screen and (max-width: 397px)
+@media screen and (max-width: 395.5px)
 {
     .left-buttons
     {
