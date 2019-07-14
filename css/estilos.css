@@ -1,6 +1,6 @@
 /*Íconos*/
 
-@font-face 
+@font-face
 {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?pftoml');
@@ -12,7 +12,7 @@
     font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] 
+[class^="icon-"], [class*=" icon-"]
 {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
@@ -28,23 +28,27 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-close:before 
+.icon-close:before
 {
     content: "\e900";
 }
-.icon-redo2:before 
+
+.icon-redo2:before
 {
     content: "\e968";
 }
-.icon-cloud-download:before 
+
+.icon-cloud-download:before
 {
     content: "\e9c2";
 }
-.icon-circle-up:before 
+
+.icon-circle-up:before
 {
     content: "\ea41";
 }
-.icon-circle-down:before 
+
+.icon-circle-down:before
 {
     content: "\ea43";
 }
@@ -88,35 +92,12 @@ a
                          "footer footer footer";
 }
 
-.mobile-bar
-{
-    display: none;
-}
-
-.bar-title
-{
-    align-items: center;
-    display: flex;
-    height: 8vh;
-    justify-content: space-between;
-    padding: 0 10px;
-}
-
 .left
 {
     background-color: #151A30;
     color: white;
     grid-area: left;
     padding: 20px 20px;
-}
-
-.close
-{
-    display:none;
-    padding: 20px 15px 0 0 ;
-    position: fixed;
-        top: 100vh;
-        right: 0;
 }
 
 .title-container
@@ -462,7 +443,7 @@ ol
                             "left suggestions suggestions"
                             "footer footer footer";
     }
-    
+
     .buttons
     {
         justify-content: center;
@@ -481,7 +462,7 @@ ol
     {
         width: 106px;
     }
-    
+
     .tags
     {
         display: flex;
@@ -513,8 +494,6 @@ ol
                             "footer footer footer"
                             ;
     }
-    
-   
 }
 
 @media screen and (max-width: 600px)
@@ -537,11 +516,11 @@ ol
         box-sizing: border-box;
         height: 100vh;
         overflow: auto;
-        padding-top: 5px;
+        padding-top: 10px;
         padding-bottom: 5px;
         padding-right: 20vw;
         position: fixed;
-            top: 100vh;
+            top: calc(100vh - 60px);
             right: 0;
             bottom: 0;
             left: 0;
@@ -555,52 +534,17 @@ ol
         top: 0vh;
     }
 
-    .mobile-bar
-    {
-        background-color: #151A30;
-        box-sizing: border-box;
-        color: white;
-        display: initial;
-        height: auto;
-        padding: 5px;
-        position: fixed;
-            top: 91.2vh;
-            right: 0;
-            left: 0;
-        transition: 0.3s;
-        z-index: 3;
-    }
-
-    .mobile-bar.isactive
-    {
-        top: -8.8vh;
-    }
-
-    .title-container
-    {
-        display:none;
-    }
-
-    .arrow, .close
+    .arrow
     {
         display: block;
         font-size: 1.3em;
+        margin-left: calc(100vw - 220px);
 
-    }
-
-    .close
-    {
-        transition: 0.3s;
-    }
-    
-    .close.isactive
-    {
-        top: 0;
     }
 
     .footer
     {
-        padding-bottom: 10vh;
+        padding-bottom: 75px;
     }
 }
 
@@ -610,7 +554,7 @@ ol
     {
         font-size: 18px;
     }
-    
+
     .tags
     {
         flex-wrap: wrap;
@@ -647,10 +591,4 @@ ol
     {
         padding-left: 15px;
     }
-}
-
-
-@media screen and (max-width: 320px)
-{
-    
 }
