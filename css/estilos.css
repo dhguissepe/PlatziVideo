@@ -478,7 +478,6 @@ ol
         margin-right: 5px;
         flex-shrink: 0;
     }
-
 }
 
 @media screen and (max-width: 768px)
@@ -493,6 +492,11 @@ ol
                             "left suggestions suggestions"
                             "footer footer footer"
                             ;
+    }
+
+    .footer
+    {
+        justify-content: center;
     }
 }
 
@@ -538,7 +542,7 @@ ol
     {
         display: block;
         font-size: 1.3em;
-        margin-left: calc(100vw - 220px);
+        margin-left: calc(100vw - 240px);
 
     }
 
@@ -550,6 +554,13 @@ ol
 
 @media screen and (max-width: 480px)
 {
+    .arrow
+    {
+        display: block;
+        font-size: 1.3em;
+        margin-left: calc(100vw - 220px);
+
+    }
     .PlatziVideo-wrapper
     {
         font-size: 18px;
