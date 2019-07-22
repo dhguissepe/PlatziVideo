@@ -1,0 +1,730 @@
+/*Íconos*/
+
+@font-face
+{
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?pftoml');
+    src:  url('../fonts/icomoon.eot?pftoml#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?pftoml') format('truetype'),
+        url('../fonts/icomoon.woff?pftoml') format('woff'),
+        url('../fonts/icomoon.svg?pftoml#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"]
+{
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-feature-settings: normal;
+            font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before
+{
+    content: "\e900";
+}
+
+.icon-redo2:before
+{
+    content: "\e968";
+}
+
+.icon-cloud-download:before
+{
+    content: "\e9c2";
+}
+
+.icon-circle-up:before
+{
+    content: "\ea41";
+}
+
+.icon-circle-down:before
+{
+    content: "\ea43";
+}
+
+/*fuentes traídas de internet
+font-family: 'Nunito', sans-serif;
+font-family: 'Varela Round', sans-serif;
+*/
+
+body
+{
+    margin: 0;
+}
+
+a
+{
+    color: #485464;
+    text-decoration: none;
+}
+
+.PlatziVideo-wrapper
+{
+    background-color: #0e0e0e;
+    color: #485464;
+    display: -ms-grid;
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    -ms-grid-columns: minmax(320px, 1024px);
+    grid-template-columns: minmax(320px, 1024px);
+    justify-content: center;
+    margin:0;
+}
+
+.grid-container
+{
+    background-color: white;
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-columns: 250px 1fr 1fr;
+    grid-template-columns: 250px 1fr 1fr;
+        grid-template-areas: "left video video"
+                         "left panel panel"
+                         "left comments suggestions"
+                         "footer footer footer";
+}
+
+.left
+{
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    background-color: #151A30;
+    color: white;
+    grid-area: left;
+    padding: 20px 20px;
+}
+
+.title-container
+{
+    align-items: center;
+    display: flex;
+}
+
+.title
+{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.7em;
+    margin: 0;
+}
+
+.arrow
+{
+    display: none;
+}
+
+
+.title span
+{
+    background: linear-gradient(90deg, #ef3f27 10%, #ef5697 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.left-subtitle
+{
+    display: inline-block;
+    font-size: 0.8em;
+    margin-top: 1.5em;
+}
+
+.left a
+{
+    color: white;
+    text-decoration: none;
+}
+
+ol
+{
+    margin: 0;
+    padding: 0;
+}
+
+.left li
+{
+    font-size: 0.65em;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.my-playlist
+{
+    position: relative;
+}
+
+.friends-playlist li
+{
+    align-items: center;
+    display: flex;
+    font-size: 0.75em;
+}
+
+.left-link
+{
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+}
+
+.avatar
+{
+    border-radius: 50%;
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+.avatar img
+{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.flexi-video
+{
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    background: blue;
+    grid-area: video;
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.video
+{
+    height: 100%;
+    position: absolute;
+        top: 0;
+        left: 0;
+    width: 100%;
+}
+
+.video-panel
+{
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: panel;
+    padding: 20px 10px 0 10px;
+    box-shadow: 0px 5px 3px -4px rgba(0,0,0,0.2);
+}
+
+.video-title
+{
+    font-size: 0.9em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.video-panel p
+{
+    color: #a2a2a2;
+    font-size: 0.8em;
+    margin: 0;
+    margin-bottom: 15;
+}
+
+.buttons
+{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-buttons
+{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 40px;
+    width: 45%;
+}
+
+.add-to-list
+{
+    color: white;
+    background: linear-gradient(90deg, #ef3f27 10%, #ef5697 90%);
+    border-radius: 10px;
+    font-size: 0.68em;
+    /* margin-right: 20px; */
+    padding: 8px 10px;
+    text-align: center;
+    width: 106px;
+}
+
+.share, .save
+{
+    display: block;
+    font-size: 0.7em;
+    /* margin: 0 20px; */
+    text-align: center;
+}
+
+.share span, .save span
+{
+    display: block;
+
+}
+
+.tags
+{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.tags a
+{
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    font-size: 0.58em;
+    padding: 3px 0;
+    text-align: center;
+    width: 70px;
+}
+
+.purple-btn
+{
+    background-color: #9768e9;
+}
+
+.aqua-btn
+{
+    background-color: #67ebc0;
+}
+
+.red-btn
+{
+    background-color: #e13b24;
+}
+
+.pink-btn
+{
+    background-color: #ee5084;
+}
+
+.comments-box
+{
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: comments;
+    padding: 20px;
+    position: relative;
+}
+
+.comments-title
+{
+    font-size: 0.7em;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.form input
+{
+    background-color: #f2f2f1;
+    background-image: url("https://miclaseinformaticacem.files.wordpress.com/2016/11/hugo-lorenzo-5c2ba-c.png");
+    background-position-x: 3px;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+    background-size: 23px;
+    border: none;
+    border-bottom: 2px solid #e7e7e7;
+    border-left: 2px solid #e7e7e7;
+    border-radius: 5px;
+    font-size: 0.8em;
+    padding: 8px 10px 5px 35px;
+    width: 100%;
+}
+
+.comment
+{
+    align-items: center;
+    display: flex;
+    margin: 15px 0;
+}
+
+.comment div
+{
+    padding-left: 20px;
+}
+
+.comments-text
+{
+    font-size: 0.78em;
+    margin: 0;
+}
+
+.comment a
+{
+    font-size: 0.78em;
+}
+
+.suggestions-box
+{
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: suggestions;
+    padding: 20px;
+}
+
+.suggestions-title
+{
+    font-size: 0.7em;
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.suggestion figure
+{
+    height: 135px;
+    margin: 0;
+    width: 200px;
+}
+
+.suggestion img
+{
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0;
+    width: 100%;
+    box-shadow: -6px 8px 20px -10px rgba(0,0,0,0.75);
+}
+
+.suggestion-description
+{
+    font-size: 0.6em;
+    margin: 20px 0;
+}
+
+.footer
+{
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    align-items: center;
+    background-color: rgb(28, 33, 56);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    grid-area: footer;
+    padding: 20px;
+}
+
+.footer p
+{
+    margin: 0;
+}
+
+.footer a
+{
+    color: white;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+}
+
+@media screen and (max-width: 882px)
+{
+    .grid-container
+    {
+        display:-ms-grid;
+        display:grid;
+        -ms-grid-columns: 250px 1fr 1fr;
+        grid-template-columns: 250px 1fr 1fr;
+            grid-template-areas: "left video video"
+                            "left panel panel"
+                            "left comments comments"
+                            "left suggestions suggestions"
+                            "footer footer footer";
+    }
+
+    .buttons
+    {
+        justify-content: center;
+    }
+
+    .left-buttons
+    {
+        justify-content: space-between;
+        margin-right: 0px;
+        padding-left: 35px;
+        padding-right: 20px;
+        width: 100%;
+    }
+
+    .save, .share
+    {
+        width: 106px;
+    }
+
+    .tags
+    {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+    }
+
+    .purple-btn,
+    .aqua-btn,
+    .red-btn,
+    .pink-btn
+    {
+        margin-right: 5px;
+        flex-shrink: 0;
+    }
+    .left
+    {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 4;
+        -ms-grid-column: 1;
+    }
+    .flexi-video
+    {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 2;
+    }
+    .video-panel
+    {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 2;
+    }
+    .comments-box
+    {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 2;
+    }
+    .suggestions-box
+    {
+        -ms-grid-row: 4;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 2;
+    }
+    .footer
+    {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .grid-container
+    {
+        display:-ms-grid;
+        display:grid;
+        -ms-grid-columns: 250px 1fr 1fr;
+        grid-template-columns: 250px 1fr 1fr;
+            grid-template-areas: "video video video"
+                            "panel panel panel"
+                            "left comments comments"
+                            "left suggestions suggestions"
+                            "footer footer footer"
+                            ;
+    }
+
+    .footer
+    {
+        justify-content: center;
+    }
+    .left
+    {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 2;
+        -ms-grid-column: 1;
+    }
+    .flexi-video
+    {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+    .video-panel
+    {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+    .comments-box
+    {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 2;
+    }
+    .suggestions-box
+    {
+        -ms-grid-row: 4;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 2;
+    }
+    .footer
+    {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+
+    .grid-container
+    {
+        display:-ms-grid;
+        display:grid;
+        -ms-grid-columns: 250px 1fr 1fr;
+        grid-template-columns: 250px 1fr 1fr;
+            grid-template-areas: "video video video"
+                            "panel panel panel"
+                            "comments comments comments"
+                            "suggestions suggestions suggestions"
+                            "footer footer footer"
+                            ;
+    }
+
+    .left
+    {
+        box-sizing: border-box;
+        height: 100vh;
+        overflow: auto;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-right: 20vw;
+        position: fixed;
+            top: calc(100vh - 60px);
+            right: 0;
+            bottom: 0;
+            left: 0;
+        transition: 0.3s;
+        width: 100vw;
+        z-index: 3;
+    }
+
+    .left.isactive
+    {
+        top: 0vh;
+    }
+
+    .arrow
+    {
+        display: block;
+        font-size: 1.3em;
+        margin-left: calc(100vw - 240px);
+
+    }
+
+    .footer
+    {
+        padding-bottom: 75px;
+    }
+
+    .flexi-video
+    {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+
+    .video-panel
+    {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+
+    .comments-box
+    {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+
+    .suggestions-box
+    {
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+
+    .footer
+    {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .arrow
+    {
+        display: block;
+        font-size: 1.3em;
+        margin-left: calc(100vw - 220px);
+
+    }
+    .PlatziVideo-wrapper
+    {
+        font-size: 18px;
+    }
+
+    .tags
+    {
+        flex-wrap: wrap;
+    }
+
+    .left-buttons
+    {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 395.5px)
+{
+    .left-buttons
+    {
+        justify-content: center;
+    }
+
+    .share, .save
+    {
+        justify-content: initial;
+        margin-left: 15px;
+        width: auto;
+    }
+
+    .purple-btn,
+    .aqua-btn,
+    .red-btn,
+    .pink-btn
+    {
+        margin-top: 10px;
+    }
+    .left-buttons
+    {
+        padding-left: 15px;
+    }
+}

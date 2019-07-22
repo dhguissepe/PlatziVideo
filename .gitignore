@@ -1,9 +1,10 @@
 *.png
 *.jpg
 *.zip
-*.json
+selection.json
 demo.css
 demo.js
 Read Me.txt
 style.css
 demo.html
+node_modules/

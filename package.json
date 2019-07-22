@@ -1,0 +1,26 @@
+{
+  "name": "platzivideo",
+  "version": "1.0.0",
+  "description": "* **Página de videos realizada con CSS Grid Layout**",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhguissepe/PlatziVideo.git"
+  },
+  "author": "dhguissepe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhguissepe/PlatziVideo/issues"
+  },
+  "homepage": "https://github.com/dhguissepe/PlatziVideo#readme",
+  "devDependencies": {
+    "postcss-cli": "6.1.3",
+    "postcss-preset-env": "^6.7.0"
+  },
+  "dependencies": {
+    "autoprefixer": "9.6.1"
+  }
+}
